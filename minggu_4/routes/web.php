@@ -23,4 +23,6 @@ Route::get('/voters', [VoterController::class, 'viewVoter']);
 
 Route::get('/task', [TaskController::class, 'index']);
 
-Route::get('/task/create', [TaskController::class, 'index']);
+Route::get('/task/create', [TaskController::class, 'create']);
+
+Route::post('/task/store', [TaskController::class, 'store']);
